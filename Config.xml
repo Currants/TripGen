@@ -4,6 +4,8 @@
         id          = "com.curransk.tripgen"
         versionCode = "10" 
         version     = "1.0.0" >
+        
+    <gap:platform name="android" /> <!-- build for android only -->
 
     <!-- versionCode is optional and Android only -->
 
