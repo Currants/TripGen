@@ -2,7 +2,7 @@
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.curransk.tripgen"
-        versionCode = "10" 
+        versionCode = "1" 
         version     = "1.0.0" >
 
     <!-- versionCode is optional and Android only -->
@@ -14,7 +14,7 @@
     </description>
 
     <author href="http://kristinamcurrans.weebly.com/" email="curransk@gmail.com">
-        Hardeep Shoker 
+        Kristina M. Currans
     </author>
 
 </widget>
