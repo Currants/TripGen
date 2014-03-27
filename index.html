@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Trip Generation Surveys (Beta)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <link href="css/styles.css" rel="stylesheet">
+
+  <script src="js/scripts.js"></script>
+</head>
+<body>
+  <div data-role="page" data-control-title="Welcome to TIA Surveys!" data-theme="a"
+  id="page13">
+      <div data-role="panel" id="panel2" data-position="left" data-display="reveal"
+      data-theme="a">
+          <ul data-role="listview" data-divider-theme="b" data-inset="false">
+              <li data-role="list-divider" role="heading">
+                  Describe your Survey
+              </li>
+              <li data-theme="a">
+                  <a href="#page10" data-transition="slide">
+                      Location Information
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page17" data-transition="slide">
+                      Session Notes
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page19" data-transition="slide">
+                      Submit Data
+                  </a>
+              </li>
+              <li data-role="list-divider" role="heading">
+                  Survey
+              </li>
+              <li data-theme="a">
+                  <a href="#page14" data-transition="slide">
+                      Customer Intercept Survey
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page20" data-transition="slide">
+                      Person Counters
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page21" data-transition="slide">
+                      Additional Data
+                  </a>
+              </li>
+              <li data-role="list-divider" role="heading">
+                  Administration
+              </li>
+              <li data-theme="a">
+                  <a href="#page18" data-transition="slide">
+                      Settings
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page16" data-transition="slide">
+                      Contact Us
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div data-theme="a" data-role="header">
+          <a data-controltype="panelbutton" data-role="button" data-theme="b" href="#panel2"
+          data-icon="bars" data-iconpos="left" class="ui-btn-left">
+              Admin
+          </a>
+          <h3>
+              Welcome!
+          </h3>
+      </div>
+      <div data-role="content">
+          <h2>
+              TIA Surveys (Beta v1.0)
+          </h2>
+          <div data-controltype="textblock">
+              <p>
+                  <b data-mce-style="font-size: medium;" style="font-size: medium;">
+                      Use this Traffic Impact Analysis (TIA) Surveys App to conduct:
+                  </b>
+              </p>
+              <ul>
+                  <li>
+                      <b data-mce-style="font-size: medium;" style="font-size: medium;">
+                          customer intercept surveys;
+                      </b>
+                  </li>
+                  <li>
+                      <b data-mce-style="font-size: medium;" style="font-size: medium;">
+                          person, vehicle, or bicycle counts, and;
+                      </b>
+                  </li>
+                  <li>
+                      <b data-mce-style="font-size: medium;" style="font-size: medium;">
+                          to track your data collections!
+                      </b>
+                  </li>
+              </ul>
+              <p>
+                  <b data-mce-style="font-size: medium;" style="font-size: medium;">
+                      Click the "Admin" button in the top left to set up your survey!
+                  </b>
+              </p>
+              <p>
+                  <br>
+              </p>
+          </div>
+          <div style=" text-align:center" data-controltype="image">
+              <img style="width: 239px; height: 50px" src="img/psulogo_white_transparent.png">
+          </div>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="Location Information" data-theme="a"
+  id="page10">
+      <div data-role="panel" id="panel3" data-position="left" data-display="reveal"
+      data-theme="a">
+          <ul data-role="listview" data-divider-theme="b" data-inset="false">
+              <li data-role="list-divider" role="heading">
+                  Describe your Survey
+              </li>
+              <li data-theme="">
+                  <a href="#page10" data-transition="slide">
+                      Location Information
+                  </a>
+              </li>
+              <li data-theme="">
+                  <a href="#page17" data-transition="slide">
+                      Session Notes
+                  </a>
+              </li>
+              <li data-theme="">
+                  <a href="#page19" data-transition="slide">
+                      Submit Data
+                  </a>
+              </li>
+              <li data-role="list-divider" role="heading">
+                  Survey
+              </li>
+              <li data-theme="">
+                  <a href="#page14" data-transition="slide">
+                      Customer Intercept Survey
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page20" data-transition="slide">
+                      Person Counters
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page21" data-transition="slide">
+                      Additional Data
+                  </a>
+              </li>
+              <li data-role="list-divider" role="heading">
+                  Administration
+              </li>
+              <li data-theme="a">
+                  <a href="#page18" data-transition="slide">
+                      Settings
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page16" data-transition="slide">
+                      Contact Us
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div data-theme="a" data-role="header" data-position="fixed">
+          <a data-controltype="panelbutton" data-role="button" data-inline="true"
+          data-theme="b" href="#panel3" data-icon="bars" data-iconpos="left" class="ui-btn-left">
+              Admin
+          </a>
+          <h3>
+              Location
+          </h3>
+      </div>
+      <div data-role="content">
+          <form id="estname" action="">
+              <div data-role="fieldcontain" data-controltype="textinput">
+                  <label for="textinput2">
+                      Establishment Name:
+                  </label>
+                  <input name="LOCAITON" id="textinput2" placeholder="" value="" type="text">
+              </div>
+          </form>
+          <form id="loca" action="">
+              <div data-role="fieldcontain" data-controltype="textinput">
+                  <label for="textinput8">
+                      Location:
+                  </label>
+                  <input name="" id="textinput8" placeholder="Address or Neaerest Intersection, City"
+                  value="" type="text">
+              </div>
+          </form>
+          <form id="estnotes" action="">
+              <div data-role="fieldcontain" data-controltype="textarea">
+                  <label for="textarea4">
+                      Notes:
+                  </label>
+                  <textarea name="LOCNOTES" id="textarea4" placeholder="Record any notes about the weather, construction, retail sales, etc. here..."></textarea>
+              </div>
+          </form>
+          <div data-controltype="textblock">
+              <p>
+                  <b>
+                      ADD:
+                  </b>
+              </p>
+              <p>
+                  <b>
+                      * map for location point?
+                  </b>
+              </p>
+              <p>
+                  <b>
+                      * land use categories?
+                  </b>
+              </p>
+          </div>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="Session" data-theme="a" id="page17">
+      <div data-role="panel" id="panel4" data-position="left" data-display="reveal"
+      data-theme="a">
+          <ul data-role="listview" data-divider-theme="b" data-inset="false">
+              <li data-role="list-divider" role="heading">
+                  Describe your Survey
+              </li>
+              <li data-theme="a">
+                  <a href="#page10" data-transition="slide">
+                      Location Information
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page17" data-transition="slide">
+                      Session Notes
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page19" data-transition="slide">
+                      Submit Data
+                  </a>
+              </li>
+              <li data-role="list-divider" role="heading">
+                  Survey
+              </li>
+              <li data-theme="a">
+                  <a href="#page14" data-transition="slide">
+                      Customer Intercept Survey
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page20" data-transition="slide">
+                      Person Counters
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page21" data-transition="slide">
+                      Additional Data
+                  </a>
+              </li>
+              <li data-role="list-divider" role="heading">
+                  Administration
+              </li>
+              <li data-theme="a">
+                  <a href="#page18" data-transition="slide">
+                      Settings
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page16" data-transition="slide">
+                      Contact Us
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div data-theme="a" data-role="header" data-position="fixed">
+          <a data-controltype="panelbutton" data-role="button" data-theme="b" href="#panel4"
+          data-icon="bars" data-iconpos="left" class="ui-btn-left">
+              Admin
+          </a>
+          <h3>
+              Session
+          </h3>
+      </div>
+      <div data-role="content">
+          <form action="">
+              <div data-role="fieldcontain" data-controltype="textinput">
+                  <label for="textinput7">
+                      Name of Surveyor:
+                  </label>
+                  <input name="SURVNAME" id="textinput7" placeholder="First and Last Name"
+                  value="" type="text">
+              </div>
+          </form>
+          <form id="date" action="">
+              <div data-role="fieldcontain" data-controltype="dateinput">
+                  <label for="dateinput2">
+                      Survey Date:
+                  </label>
+                  <input name="DATE" id="dateinput2" placeholder="" value="" type="date">
+              </div>
+          </form>
+          <form id="tperiod" action="">
+              <div data-role="fieldcontain" data-controltype="textinput">
+                  <label for="textinput9">
+                      Start/End Time:
+                  </label>
+                  <input name="" id="textinput9" placeholder="5:00pm/7:00pm" value="" type="text">
+              </div>
+          </form>
+          <form id="entexnotes" action="">
+              <div data-role="fieldcontain" data-controltype="textarea">
+                  <label for="textarea8">
+                      Entrance/Exit:
+                  </label>
+                  <textarea name="" id="textarea8" placeholder="Describe the entrance and/or exit where the surveyor is standing. Are there other doors and surveyors? Note that here."></textarea>
+              </div>
+          </form>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="Submit Data" data-theme="a"
+  id="page19">
+      <div data-role="panel" id="panel5" data-position="left" data-display="reveal"
+      data-theme="a">
+          <ul data-role="listview" data-divider-theme="b" data-inset="false">
+              <li data-role="list-divider" role="heading">
+                  Describe your Survey
+              </li>
+              <li data-theme="a">
+                  <a href="#page10" data-transition="slide">
+                      Location Information
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page17" data-transition="slide">
+                      Session Notes
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page19" data-transition="slide">
+                      Submit Data
+                  </a>
+              </li>
+              <li data-role="list-divider" role="heading">
+                  Survey
+              </li>
+              <li data-theme="a">
+                  <a href="#page14" data-transition="slide">
+                      Customer Intercept Survey
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page20" data-transition="slide">
+                      Person Counters
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page21" data-transition="slide">
+                      Additional Data
+                  </a>
+              </li>
+              <li data-role="list-divider" role="heading">
+                  Administration
+              </li>
+              <li data-theme="a">
+                  <a href="#page18" data-transition="slide">
+                      Settings
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page16" data-transition="slide">
+                      Contact Us
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div data-theme="a" data-role="header">
+          <a data-controltype="panelbutton" data-role="button" data-theme="b" href="#panel5"
+          data-icon="bars" data-iconpos="left" class="ui-btn-left">
+              Admin
+          </a>
+          <h3>
+              Submit Data
+          </h3>
+      </div>
+      <div data-role="content">
+          <div data-controltype="textblock">
+              <p>
+                  <b>
+                      Google drive API connect, log-in in "setting"
+                  </b>
+              </p>
+              <p>
+                  <b>
+                      Provide an option for submitting to our national database? Make it required?
+                  </b>
+              </p>
+          </div>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="Customer Intercept Survey" data-theme="a"
+  id="page14">
+      <div data-role="panel" id="panel6" data-position="left" data-display="reveal"
+      data-theme="a">
+          <ul data-role="listview" data-divider-theme="b" data-inset="false">
+              <li data-role="list-divider" role="heading">
+                  Describe your Survey
+              </li>
+              <li data-theme="a">
+                  <a href="#page10" data-transition="slide">
+                      Location Information
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page17" data-transition="slide">
+                      Session Notes
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page19" data-transition="slide">
+                      Submit Data
+                  </a>
+              </li>
+              <li data-role="list-divider" role="heading">
+                  Survey
+              </li>
+              <li data-theme="a">
+                  <a href="#page14" data-transition="slide">
+                      Customer Intercept Survey
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page20" data-transition="slide">
+                      Person Counters
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page21" data-transition="slide">
+                      Additional Data
+                  </a>
+              </li>
+              <li data-role="list-divider" role="heading">
+                  Administration
+              </li>
+              <li data-theme="a">
+                  <a href="#page18" data-transition="slide">
+                      Settings
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page16" data-transition="slide">
+                      Contact Us
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div data-theme="a" data-role="header">
+          <a data-controltype="panelbutton" data-role="button" data-theme="b" href="#panel6"
+          data-icon="bars" data-iconpos="left" class="ui-btn-left">
+              Admin
+          </a>
+          <h3>
+              Survey
+          </h3>
+      </div>
+      <div data-role="content">
+          <div data-controltype="textblock">
+              <p style="text-align: center;" data-mce-style="text-align: center;">
+                  <b>
+                      <br>
+                  </b>
+              </p>
+              <p style="text-align: center;" data-mce-style="text-align: center;">
+                  <b>
+                      <br>
+                  </b>
+              </p>
+              <p style="text-align: center;" data-mce-style="text-align: center;">
+                  <b>
+                      <br>
+                  </b>
+              </p>
+              <p style="text-align: center;" data-mce-style="text-align: center;">
+                  <span style="font-size: large;">
+                      <b>
+                          By clicking "START SURVEY", you are consenting to participate (WORDING).
+                      </b>
+                  </span>
+              </p>
+              <p style="text-align: center;" data-mce-style="text-align: center;">
+                  <b>
+                      <br>
+                  </b>
+              </p>
+              <p style="text-align: center;" data-mce-style="text-align: center;">
+                  <b>
+                      <br>
+                  </b>
+              </p>
+              <p style="text-align: center;" data-mce-style="text-align: center;">
+                  <b>
+                      <br>
+                  </b>
+              </p>
+          </div>
+          <a data-role="button" data-transition="flip" data-theme="b" href="#page12">
+              START SURVEY
+          </a>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="Mode" data-theme="a" id="page12">
+      <div data-role="panel" id="panel7" data-position="left" data-display="reveal"
+      data-theme="a">
+          <ul data-role="listview" data-divider-theme="b" data-inset="false">
+              <li data-role="list-divider" role="heading">
+                  Describe your Survey
+              </li>
+              <li data-theme="a">
+                  <a href="#page10" data-transition="slide">
+                      Location Information
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page17" data-transition="slide">
+                      Session Notes
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page19" data-transition="slide">
+                      Submit Data
+                  </a>
+              </li>
+              <li data-role="list-divider" role="heading">
+                  Survey
+              </li>
+              <li data-theme="a">
+                  <a href="#page14" data-transition="slide">
+                      Customery Intercept Survey
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page20" data-transition="slide">
+                      Person Counters
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page21" data-transition="slide">
+                      Additional Data
+                  </a>
+              </li>
+              <li data-role="list-divider" role="heading">
+                  Administration
+              </li>
+              <li data-theme="a">
+                  <a href="#page18" data-transition="slide">
+                      Settings
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page16" data-transition="slide">
+                      Contact Us
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div data-theme="a" data-role="header">
+          <a data-controltype="panelbutton" data-role="button" data-theme="b" href="#panel7"
+          data-icon="bars" data-iconpos="left" class="ui-btn-left">
+              Admin
+          </a>
+          <a data-role="button" data-transition="flip" data-theme="b" href="#page15"
+          class="ui-btn-right">
+              X
+          </a>
+          <h3>
+              Survey
+          </h3>
+      </div>
+      <div data-role="content">
+          <form id="mode" action="http://formend.com/f/0da7a4b27a" method="POST">
+              <div data-role="fieldcontain" data-controltype="radiobuttons">
+                  <fieldset data-role="controlgroup" data-type="vertical">
+                      <legend>
+                          How did you get here today?
+                      </legend>
+                      <input id="radio32" name="MODE" value="1" type="radio">
+                      <label for="radio32">
+                          Person vehicle
+                      </label>
+                      <input id="radio33" name="MODE" value="2" type="radio">
+                      <label for="radio33">
+                          Car share
+                      </label>
+                      <input id="radio35" name="MODE" value="3" type="radio">
+                      <label for="radio35">
+                          Bike
+                      </label>
+                      <input id="radio34" name="MODE" value="4" type="radio">
+                      <label for="radio34">
+                          Walk
+                      </label>
+                      <input id="radio37" name="MODE" value="5" type="radio">
+                      <label for="radio37">
+                          Bus
+                      </label>
+                      <input id="radio38" name="MODE" value="6" type="radio">
+                      <label for="radio38">
+                          Light-rail
+                      </label>
+                      <input id="radio39" name="MODE" value="7" type="radio">
+                      <label for="radio39">
+                          Street-car
+                      </label>
+                  </fieldset>
+              </div>
+              <input type="hidden" name="MODE" value="">
+          </form>
+          <div data-role="navbar" data-iconpos="bottom">
+              <ul>
+                  <li>
+                      <a href="#page14" data-transition="flip" data-theme="b" data-icon="arrow-l">
+                          Back
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#page2" data-transition="flip" data-theme="b" data-icon="arrow-r">
+                          Next
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="Parking" data-theme="a" id="page2">
+      <div data-role="panel" id="panel8" data-position="left" data-display="reveal"
+      data-theme="a">
+          <ul data-role="listview" data-divider-theme="b" data-inset="false">
+              <li data-role="list-divider" role="heading">
+                  Describe your Survey
+              </li>
+              <li data-theme="a">
+                  <a href="#page10" data-transition="slide">
+                      Location Information
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page17" data-transition="slide">
+                      Session Notes
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page19" data-transition="slide">
+                      Submit Data
+                  </a>
+              </li>
+              <li data-role="list-divider" role="heading">
+                  Survey
+              </li>
+              <li data-theme="a">
+                  <a href="#page14" data-transition="slide">
+                      Customer Intercept Survey
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page20" data-transition="slide">
+                      Person Counters
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page21" data-transition="slide">
+                      Additional Data
+                  </a>
+              </li>
+              <li data-role="list-divider" role="heading">
+                  Administration
+              </li>
+              <li data-theme="a">
+                  <a href="#page18" data-transition="slide">
+                      Settings
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page16" data-transition="slide">
+                      Contact Us
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div data-theme="a" data-role="header" data-position="fixed">
+          <a data-controltype="panelbutton" data-role="button" data-theme="b" href="#panel8"
+          data-icon="bars" data-iconpos="left" class="ui-btn-left">
+              Admin
+          </a>
+          <a data-role="button" data-transition="flip" data-theme="b" href="#page15"
+          class="ui-btn-right">
+              X
+          </a>
+          <h3>
+              Survey
+          </h3>
+      </div>
+      <div data-role="content">
+          <form id="parking" action="http://formend.com/f/0da7a4b27a" method="POST">
+              <div data-role="fieldcontain" data-controltype="radiobuttons">
+                  <fieldset data-role="controlgroup" data-type="vertical">
+                      <legend>
+                          Where did you park?
+                      </legend>
+                      <input id="radio12" name="PARK" value="2" type="radio">
+                      <label for="radio12">
+                          On-street
+                      </label>
+                      <input id="radio13" name="PARK" value="3" type="radio">
+                      <label for="radio13">
+                          Off-street parking lot
+                      </label>
+                      <input id="radio11" name="PARK" value="1" type="radio">
+                      <label for="radio11">
+                          Garage
+                      </label>
+                      <input id="radio14" name="PARK" value="4" type="radio">
+                      <label for="radio14">
+                          Other
+                      </label>
+                  </fieldset>
+              </div>
+              <input type="hidden" name="PARK" value="">
+          </form>
+          <h3>
+          </h3>
+          <h3>
+          </h3>
+          <div data-role="navbar" data-iconpos="bottom">
+              <ul>
+                  <li>
+                      <a href="#page12" data-transition="flip" data-theme="b" data-icon="arrow-l">
+                          Back
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#page4" data-transition="flip" data-theme="b" data-icon="arrow-r">
+                          Next
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="Vehicle Occupancy" data-theme="a"
+  id="page4">
+      <div data-role="panel" id="panel9" data-position="left" data-display="reveal"
+      data-theme="a">
+          <ul data-role="listview" data-divider-theme="b" data-inset="false">
+              <li data-role="list-divider" role="heading">
+                  Describe your Survey
+              </li>
+              <li data-theme="a">
+                  <a href="#page10" data-transition="slide">
+                      Location Information
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page17" data-transition="slide">
+                      Session Notes
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page19" data-transition="slide">
+                      Submit Data
+                  </a>
+              </li>
+              <li data-role="list-divider" role="heading">
+                  Survey
+              </li>
+              <li data-theme="a">
+                  <a href="#page14" data-transition="slide">
+                      Customer Intercept Survey
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page20" data-transition="slide">
+                      Person Counters
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page21" data-transition="slide">
+                      Additional Data
+                  </a>
+              </li>
+              <li data-role="list-divider" role="heading">
+                  Administration
+              </li>
+              <li data-theme="a">
+                  <a href="#page18" data-transition="slide">
+                      Settings
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page16" data-transition="slide">
+                      Contact Us
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div data-theme="a" data-role="header" data-position="fixed">
+          <a data-controltype="panelbutton" data-role="button" data-theme="b" href="#panel9"
+          data-icon="bars" data-iconpos="left" class="ui-btn-left">
+              Admin
+          </a>
+          <a data-role="button" data-transition="flip" data-theme="b" href="#page15"
+          class="ui-btn-right">
+              X
+          </a>
+          <h3>
+              Survey
+          </h3>
+      </div>
+      <div data-role="content">
+          <form id="vehocc" action="http://formend.com/f/0da7a4b27a" method="POST">
+              <div data-role="fieldcontain" data-controltype="slider">
+                  <label for="slider1">
+                      How many people (including yourself) came with you in your car?
+                  </label>
+                  <input id="slider1" type="range" name="VEHOCC" value="1" min="1" max="10"
+                  data-highlight="true">
+              </div>
+              <input type="hidden" name="VEHOCC" value="">
+          </form>
+          <div data-role="navbar" data-iconpos="bottom">
+              <ul>
+                  <li>
+                      <a href="#page2" data-transition="flip" data-theme="b" data-icon="arrow-l">
+                          Back
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#page15" data-transition="flip" data-theme="b" data-icon="arrow-r">
+                          Next
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="Thank you" data-theme="a" id="page15">
+      <div data-role="panel" id="panel10" data-position="left" data-display="reveal"
+      data-theme="a">
+          <ul data-role="listview" data-divider-theme="b" data-inset="false">
+              <li data-role="list-divider" role="heading">
+                  Describe your Survey
+              </li>
+              <li data-theme="a">
+                  <a href="#page10" data-transition="slide">
+                      Location Information
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page17" data-transition="slide">
+                      Session Notes
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page19" data-transition="slide">
+                      Submit Data
+                  </a>
+              </li>
+              <li data-role="list-divider" role="heading">
+                  Survey
+              </li>
+              <li data-theme="a">
+                  <a href="#page14" data-transition="slide">
+                      Customer Intercept Survey
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page20" data-transition="slide">
+                      Person Counters
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page21" data-transition="slide">
+                      Additional Data
+                  </a>
+              </li>
+              <li data-role="list-divider" role="heading">
+                  Administration
+              </li>
+              <li data-theme="a">
+                  <a href="#page18" data-transition="slide">
+                      Settings
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page16" data-transition="slide">
+                      Contact Us
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div data-theme="a" data-role="header">
+          <a data-controltype="panelbutton" data-role="button" data-theme="b" href="#panel10"
+          data-icon="bars" data-iconpos="left" class="ui-btn-left">
+              Admin
+          </a>
+          <h3>
+              Survey
+          </h3>
+      </div>
+      <div data-role="content">
+          <div data-controltype="textblock">
+              <p>
+                  <b>
+                      <br>
+                  </b>
+              </p>
+              <p style="text-align: center;">
+                  <span style="font-size: large;">
+                      <b>
+                          <br>
+                      </b>
+                  </span>
+              </p>
+              <p style="text-align: center;">
+                  <span style="font-size: large;">
+                      <b>
+                          <br>
+                      </b>
+                  </span>
+              </p>
+              <p style="text-align: center;">
+                  <span style="font-size: large;">
+                      <b>
+                          Thank you for taking our survey!
+                      </b>
+                  </span>
+              </p>
+              <p style="text-align: center;">
+                  <span style="font-size: large;">
+                      <b>
+                          (WORDING)
+                      </b>
+                  </span>
+              </p>
+              <p>
+                  <b>
+                      <br>
+                  </b>
+              </p>
+              <p>
+                  <b>
+                      <br>
+                  </b>
+              </p>
+              <p>
+                  <b>
+                      <br>
+                  </b>
+              </p>
+          </div>
+          <div data-role="navbar" data-iconpos="bottom">
+              <ul>
+                  <li>
+                      <a href="#page15" data-transition="flip" data-theme="b" data-icon="arrow-l">
+                          Back
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#page11" data-transition="flip" data-theme="b" data-icon="arrow-r">
+                          For Surveyor
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="Final Questions" data-theme="a"
+  id="page11">
+      <div data-role="panel" id="panel11" data-position="left" data-display="reveal"
+      data-theme="a">
+          <ul data-role="listview" data-divider-theme="b" data-inset="false">
+              <li data-role="list-divider" role="heading">
+                  Describe your Survey
+              </li>
+              <li data-theme="a">
+                  <a href="#page10" data-transition="slide">
+                      Location Information
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page17" data-transition="slide">
+                      Session Notes
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page19" data-transition="slide">
+                      Submit Data
+                  </a>
+              </li>
+              <li data-role="list-divider" role="heading">
+                  Survey
+              </li>
+              <li data-theme="a">
+                  <a href="#page14" data-transition="slide">
+                      Customer Intercept Survey
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page20" data-transition="slide">
+                      Person Counters
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page21" data-transition="slide">
+                      Additional Data
+                  </a>
+              </li>
+              <li data-role="list-divider" role="heading">
+                  Administration
+              </li>
+              <li data-theme="a">
+                  <a href="#page18" data-transition="slide">
+                      Settings
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page16" data-transition="slide">
+                      Contact Us
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div data-theme="a" data-role="header" data-position="fixed">
+          <a data-controltype="panelbutton" data-role="button" data-theme="b" href="#panel11"
+          data-icon="bars" data-iconpos="left" class="ui-btn-left">
+              Admin
+          </a>
+          <h3>
+              Survey
+          </h3>
+      </div>
+      <div data-role="content">
+          <div data-controltype="textblock">
+              <p>
+                  <b>
+                      SURVEYOR NOTES
+                  </b>
+              </p>
+          </div>
+          <form id="enterexit" action="">
+              <div data-role="fieldcontain" data-controltype="toggleswitch">
+                  <label for="toggleswitch4">
+                      Was this person arriving or leaving?
+                  </label>
+                  <select name="toggleswitch4" id="toggleswitch4" data-theme="" data-role="slider">
+                      <option value="off">
+                          Arriving
+                      </option>
+                      <option value="on">
+                          Leaving
+                      </option>
+                  </select>
+              </div>
+              <form id="gender" action="">
+                  <div data-role="fieldcontain" data-controltype="toggleswitch">
+                      <label for="toggleswitch5">
+                          Paricipant's gender:
+                      </label>
+                      <select name="toggleswitch5" id="toggleswitch5" data-theme="" data-role="slider">
+                          <option value="off">
+                              Male
+                          </option>
+                          <option value="on">
+                              Female
+                          </option>
+                      </select>
+                  </div>
+              </form>
+          </form>
+          <form id="notes" action="http://formend.com/f/0da7a4b27a" method="POST">
+              <div data-role="fieldcontain" data-controltype="textarea">
+                  <label for="textarea1">
+                      NOTES:
+                  </label>
+                  <textarea name="FINALNOTE" id="textarea1" placeholder="Place any specific notes about this participant here."></textarea>
+              </div>
+              <input type="hidden" name="ENTEREXIT" value="">
+              <input type="hidden" name="GENDER" value="">
+              <input type="hidden" name="FINALNOTE" value="">
+          </form>
+          <input type="submit" data-inline="true" data-theme="b" value="Submit Survey"
+          data-mini="true">
+          <hr style="height:3px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;">
+          <div data-role="navbar" data-iconpos="bottom">
+              <ul>
+                  <li>
+                      <a href="#page4" data-transition="flip" data-theme="b" data-icon="arrow-l">
+                          Back
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#page14" data-transition="flip" data-theme="b" data-icon="star">
+                          New Survey
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="Person Counters" data-theme="a"
+  id="page20">
+      <div data-role="panel" id="panel12" data-position="left" data-display="reveal"
+      data-theme="a">
+          <ul data-role="listview" data-divider-theme="b" data-inset="false">
+              <li data-role="list-divider" role="heading">
+                  Describe your Survey
+              </li>
+              <li data-theme="a">
+                  <a href="#page10" data-transition="slide">
+                      Location Information
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page17" data-transition="slide">
+                      Session Notes
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page19" data-transition="slide">
+                      Submit Data
+                  </a>
+              </li>
+              <li data-role="list-divider" role="heading">
+                  Survey
+              </li>
+              <li data-theme="a">
+                  <a href="#page14" data-transition="slide">
+                      Customer Intercept Survey
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page20" data-transition="slide">
+                      Person Counters
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page21" data-transition="slide">
+                      Additional Data
+                  </a>
+              </li>
+              <li data-role="list-divider" role="heading">
+                  Administration
+              </li>
+              <li data-theme="a">
+                  <a href="#page18" data-transition="slide">
+                      Settings
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page16" data-transition="slide">
+                      Contact Us
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div data-theme="a" data-role="header">
+          <a data-controltype="panelbutton" data-role="button" data-theme="b" href="#panel12"
+          data-icon="bars" data-iconpos="left" class="ui-btn-left">
+              Admin
+          </a>
+          <h3>
+              Person Counter
+          </h3>
+      </div>
+      <div data-role="content">
+          <div data-controltype="textblock">
+              <p>
+                  <b>
+                      Big buttons for "in and out" - form, timestamp with counters jQuery. Talleys
+                      per 15 minute periods, then appends (with button?) -- time relative to
+                      clock, not time starting.
+                  </b>
+              </p>
+          </div>
+          <a data-role="button" data-inline="true" href="#page20" class="CLICKER">
+              ENTERED
+          </a>
+          <a data-role="button" data-inline="true" href="#page20" class="CLICKER">
+              EXITED
+          </a>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="Additional Data" data-theme="a"
+  id="page21">
+      <div data-role="panel" id="panel13" data-position="left" data-display="reveal"
+      data-theme="a">
+          <ul data-role="listview" data-divider-theme="b" data-inset="false">
+              <li data-role="list-divider" role="heading">
+                  Describe your Survey
+              </li>
+              <li data-theme="a">
+                  <a href="#page10" data-transition="slide">
+                      Location Information
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page17" data-transition="slide">
+                      Session Notes
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page19" data-transition="slide">
+                      Submit Data
+                  </a>
+              </li>
+              <li data-role="list-divider" role="heading">
+                  Survey
+              </li>
+              <li data-theme="a">
+                  <a href="#page14" data-transition="slide">
+                      Customer Intercept Survey
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page20" data-transition="slide">
+                      Person Counters
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page21" data-transition="slide">
+                      Additional Data
+                  </a>
+              </li>
+              <li data-role="list-divider" role="heading">
+                  Administration
+              </li>
+              <li data-theme="a">
+                  <a href="#page18" data-transition="slide">
+                      Settings
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page16" data-transition="slide">
+                      Contact Us
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div data-theme="a" data-role="header">
+          <a data-controltype="panelbutton" data-role="button" data-theme="b" href="#panel13"
+          data-icon="bars" data-iconpos="left" class="ui-btn-left">
+              Admin
+          </a>
+          <h3>
+              Additional Data
+          </h3>
+      </div>
+      <div data-role="content">
+          <div data-controltype="textblock">
+              <p>
+                  <b>
+                      When files are appended, all survey files are uploaded (if any data is
+                      collected, at all). This provides an option to upload a file for:
+                  </b>
+              </p>
+              <p>
+                  <b>
+                      * map for XY coordinate of location surveyd
+                  </b>
+              </p>
+              <p>
+                  <b>
+                      * weather? scrap weather underground for source nearest XY - parcipitation,
+                      temperature averages for each hour surveyed
+                  </b>
+              </p>
+              <p>
+                  <b>
+                      * Smart growth db? Link XY/block group ID to connect with online hosted
+                      smart growth db. Provide information about density, etc, and maybe suggestions
+                      for similar block groups?&nbsp;
+                  </b>
+              </p>
+              <p>
+                  <b>
+                      * Possibly link smart growth characteristics to our hosted data base...
+                      Meaning, we could suggest comparing with certain land use/BE locations
+                      in our national database?
+                  </b>
+              </p>
+              <p>
+                  <b>
+                      <br>
+                  </b>
+              </p>
+          </div>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="Settings" data-theme="a" id="page18">
+      <div data-role="panel" id="panel14" data-position="left" data-display="reveal"
+      data-theme="a">
+          <ul data-role="listview" data-divider-theme="b" data-inset="false">
+              <li data-role="list-divider" role="heading">
+                  Describe your Survey
+              </li>
+              <li data-theme="a">
+                  <a href="#page10" data-transition="slide">
+                      Location Information
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page17" data-transition="slide">
+                      Session Notes
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page19" data-transition="slide">
+                      Submit Data
+                  </a>
+              </li>
+              <li data-role="list-divider" role="heading">
+                  Survey
+              </li>
+              <li data-theme="a">
+                  <a href="#page14" data-transition="slide">
+                      Customer Intercept Survey
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page20" data-transition="slide">
+                      Person Counters
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page21" data-transition="slide">
+                      Additional Data
+                  </a>
+              </li>
+              <li data-role="list-divider" role="heading">
+                  Administration
+              </li>
+              <li data-theme="a">
+                  <a href="#page18" data-transition="slide">
+                      Settings
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page16" data-transition="slide">
+                      Contact Us
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div data-theme="a" data-role="header">
+          <a data-controltype="panelbutton" data-role="button" data-theme="b" href="#panel14"
+          data-icon="bars" data-iconpos="left" class="ui-btn-left">
+              Admin
+          </a>
+          <h3>
+              Settings
+          </h3>
+      </div>
+      <div data-role="content">
+          <div data-controltype="textblock">
+              <p>
+                  <b>
+                      NOTES:
+                  </b>
+              </p>
+              <p>
+                  <b>
+                      GDrive log in?
+                  </b>
+              </p>
+              <p>
+                  <b>
+                      Local location for creating usable databases
+                  </b>
+              </p>
+          </div>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="Contact Us" data-theme="a" id="page16">
+      <div data-role="panel" id="panel15" data-position="left" data-display="reveal"
+      data-theme="a">
+          <ul data-role="listview" data-divider-theme="b" data-inset="false">
+              <li data-role="list-divider" role="heading">
+                  Describe your Survey
+              </li>
+              <li data-theme="a">
+                  <a href="#page10" data-transition="slide">
+                      Location Information
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page17" data-transition="slide">
+                      Session Notes
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page19" data-transition="slide">
+                      Submit Data
+                  </a>
+              </li>
+              <li data-role="list-divider" role="heading">
+                  Survey
+              </li>
+              <li data-theme="a">
+                  <a href="#page14" data-transition="slide">
+                      Customer Intercept Survey
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page20" data-transition="slide">
+                      Person Counters
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page21" data-transition="slide">
+                      Additional Data
+                  </a>
+              </li>
+              <li data-role="list-divider" role="heading">
+                  Administration
+              </li>
+              <li data-theme="a">
+                  <a href="#page18" data-transition="slide">
+                      Settings
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page16" data-transition="slide">
+                      Contact Us
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div data-theme="a" data-role="header">
+          <a data-controltype="panelbutton" data-role="button" data-theme="b" href="#panel15"
+          data-icon="bars" data-iconpos="left" class="ui-btn-left">
+              Admin
+          </a>
+          <h3>
+              Contact Us
+          </h3>
+      </div>
+      <div data-role="content">
+          <div data-controltype="textblock">
+              <p>
+                  <span style="font-size: large;">
+                      <b style="font-size: 10px;" data-mce-style="font-size: 10px;">
+                          This App was developed by K. Currans and Portland State University. For
+                          instructions or to provide feedback, see:&nbsp;
+                      </b>
+                      <b style="font-size: 10px;" data-mce-style="font-size: 10px;">
+                          WEBSITELINKINTERACT.
+                      </b>
+                  </span>
+              </p>
+              <p>
+                  <span>
+                      <b style="font-size: 10px;" data-mce-style="font-size: 10px;">
+                          <br>
+                      </b>
+                  </span>
+              </p>
+          </div>
+      </div>
+  </div>
+</body>
+</html>
