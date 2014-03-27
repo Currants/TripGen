@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.curransk.tripgen"
+        versionCode = "10" 
+        version     = "1.0.0" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>TripGen</name>
+
+    <description>
+        Customer intercept survey for traffic impact analysis of land use development. 
+    </description>
+
+    <author href="http://kristinamcurrans.weebly.com/" email="curransk@gmail.com">
+        Hardeep Shoker 
+    </author>
+
+</widget>
