@@ -17,39 +17,4 @@ CodiqaControls.GoogleMap.prototype.initType=function(){if(window.CodiqaControls.
 CodiqaControls.GoogleMap.prototype.callbackInit=function(){var a,b=window.CodiqaControls.getInstances("googlemaps");for(a=0;a<b.length;a++)b[a]._opts.ready(b[a])};CodiqaControls.GoogleMap.prototype.refresh=function(){this.map&&(this.el&&$(this.el).closest(".ui-page-active").length)&&(google.maps.event.trigger(this.map,"resize"),this.center&&this.map.setCenter(this.center))};window.CodiqaControls.define("googlemaps",CodiqaControls.GoogleMap);
 (function(a){a.widget("mobile.tabbar",a.mobile.navbar,{_create:function(){var b=this.element.jqmData("theme")||"a";this.element.addClass("ui-footer ui-footer-fixed ui-bar-"+b);this.element.closest('[data-role="page"]').addClass("ui-page-footer-fixed");a.mobile.navbar.prototype._create.call(this)},setActive:function(a){this.element.find("a").removeClass("ui-btn-active ui-state-persist");this.element.find('a[href="'+a+'"]').addClass("ui-btn-active ui-state-persist")}});a(document).on("pagecreate create",
 function(b){return a(b.target).find(":jqmData(role='tabbar')").tabbar()});a(document).on("pageshow",":jqmData(role='page')",function(b){var d=a(b.target).attr("id");b=a.mobile.activePage.find(':jqmData(role="tabbar")');b.length&&b.tabbar("setActive","#"+d);window.CodiqaControls.refresh()});window.CodiqaControls.init()})(jQuery);
-$(document).ready(function(){
-        
-            var participantIndex = 0; //start with "zero" participants, and provide an "ID" for the count
-            
-            //create CSV files to a local drive, new session? new file...
-            //create CSV file with "sessionnotes"
-        
-            // Detect when the submit button is clicked, compile dataparticipant's data, submit data, clear data from survey
-            $('input[type="submit"]').click(function() {
-                
-                var id = participantIndex;
-                var md = $('#mode').find('input:radio').val();
-                var pk = $('#parking').find('input:radio').val();
-                var vo = $('#vehocc').find('input:slider').val();
-                var ee = $('#enterexit').find('input:checked').val();
-                var gn = $('#gender').find('input:checked').val();
-                var nt = $('#notes').find('input:checked').val();
-            
-                //If the append survey/session notes
-                var su = $('#surveyor').find('input:text').val();
-                var da = $('#date').find('input:text').val();
-                var tp = $('#tperiod').find('input:text').val();
-                var en = $('#entexnotes').find('input:text').val();
-                var es = $('#estname').find('input:text').val();
-                var lo = $('#loca').find('input:text').val();
-                var ln = $('#estnotes').find('input:text').val();
-        
-                //append this data into the CSV file
-            
-            var participantIndex = participantIndex + 1; //start with "zero" participants, and provide an "ID" for the count
-            
-            //clear input values
-            
-            });
-        
-        });
+$(document).ready(function(){var a=0;$('input[type="submit"]').click(function(){var c=l;var k=$("#mode").find("input:radio").val();var f=$("#parking").find("input:radio").val();var d=$("#vehocc").find("input:slider").val();var g=$("#enterexit").find("input:checked").val();var e=$("#gender").find("input:checked").val();var j=$("#notes").find("input:checked").val();var o=$("#surveyor").find("input:text").val();var p=$("#date").find("input:text").val();var m=$("#tperiod").find("input:text").val();var b=$("#entexnotes").find("input:text").val();var n=$("#estname").find("input:text").val();var h=$("#loca").find("input:text").val();var i=$("#estnotes").find("input:text").val();var l=l+1})});
